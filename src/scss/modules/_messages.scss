@@ -1,5 +1,47 @@
 .messages {
-  height: 150px;
+  height: 560px;
   border: 1px solid #ccc;
   overflow: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: red;
+  color: #ccc;
+}
+
+.messagefalse {
+  margin: 10px 45px;
+}
+
+.messagefalse .message-text {
+  background-color: chartreuse;
+  padding: 20px;
+  border-radius: 20px;
+  border-bottom-left-radius: 5px;
+  max-width: 200px;
+}
+
+.message,
+.is-mine {
+  background-color: cyan;
+  padding: 20px;
+  margin: 10px 45px;
+  border-radius: 20px;
+  border-bottom-right-radius: 5px;
+  max-width: 300px;
+  align-self: flex-end;
+}
+
+.message .message-user,
+.is-mine .message-user {
+  display: none;
+}
+
+.message .message-text,
+.is-mine .message-text {
+}
+
+.message-time {
+  display: none;
 }

@@ -1,0 +1,31 @@
+.send {
+  display: flex;
+  flex-flow: column no-wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+}
+
+.send-all {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11px;
+}
+
+.send-info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+.send-line1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}

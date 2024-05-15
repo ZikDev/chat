@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
-  <body>
-    <a href="static.html">Version statique</a>
+  <body class="l-body body">
+    <div class="l-screen screen">
+      <div class="l-logo logo"><img src="img/Group 2.svg" alt="" /></div>
+      <!-- Ne pas enlever data-messages! -->
+      <div class="messages" data-messages></div>
 
-    <!-- Ne pas enlever data-messages! -->
-    <div class="messages" data-messages></div>
-
-    <!-- Ne pas enlever data-form, et ne pas changer le name des inputs! -->
-    <form data-form>
-      <input type="text" name="author" placeholder="Nom" />
-      <input type="text" name="text" placeholder="Message" />
-      <button type="submit">Envoyer</button>
-    </form>
-
-    <script src="js/main.js" type="module"></script>
+      <!-- Ne pas enlever data-form, et ne pas changer le name des inputs! -->
+      <form data-form class="l-send send">
+        <div class="send-all">
+          <div class="send-info">
+            <div class="send-line1">
+              <img src="img/man.svg" alt="" />
+              <input
+                class="send-name"
+                type="text"
+                name="author"
+                placeholder="Nom"
+              />
+            </div>
+            <div class="send-line2">
+              <input
+                class="send-text"
+                type="text"
+                name="text"
+                placeholder="Message"
+              />
+            </div>
+          </div>
+          <button class="send-button" type="submit">
+            <img src="img/Vector.svg" alt="" />
+          </button>
+        </div>
+      </form>
+      <script src="js/main.js" type="module"></script>
+    </div>
   </body>
 </html>
