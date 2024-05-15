@@ -1,13 +1,14 @@
 .messages {
+  padding-bottom: 30px;
   height: 560px;
-  border: 1px solid #ccc;
+  border-bottom: 2px solid #000;
   overflow: auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  background-color: red;
-  color: #ccc;
+  background: url("../img/background.jpg");
+  background-size: 560px;
 }
 
 .messagefalse {
@@ -15,22 +16,15 @@
 }
 
 .messagefalse .message-text {
-  background-color: chartreuse;
-  padding: 20px;
-  border-radius: 20px;
-  border-bottom-left-radius: 5px;
+  padding: 10px;
+  border-radius: 16px 16px 16px 4px;
   max-width: 200px;
 }
 
 .message,
 .is-mine {
-  background-color: cyan;
-  padding: 20px;
-  margin: 10px 45px;
-  border-radius: 20px;
-  border-bottom-right-radius: 5px;
-  max-width: 300px;
   align-self: flex-end;
+  margin: 10px 45px;
 }
 
 .message .message-user,
@@ -40,8 +34,25 @@
 
 .message .message-text,
 .is-mine .message-text {
+  padding: 10px;
+  border-radius: 16px 16px 4px 16px;
+  max-width: 200px;
+  align-self: flex-end;
 }
 
 .message-time {
   display: none;
+}
+
+.message-text {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.message-user {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 10px;
 }

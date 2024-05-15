@@ -1,4 +1,5 @@
 .send {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-flow: column no-wrap;
   justify-content: center;
@@ -28,4 +29,35 @@
   justify-content: center;
   align-items: center;
   gap: 11px;
+}
+
+.send-text,
+.send-name {
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #000;
+  outline-color: #05ff00;
+  font-size: 14px;
+}
+
+.send-text {
+  width: 282px;
+  height: 42px;
+}
+
+.send-name {
+  width: 224px;
+  height: 42px;
+}
+
+.send-button {
+  height: 42px;
+  width: 47px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-color: #05ff00;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
